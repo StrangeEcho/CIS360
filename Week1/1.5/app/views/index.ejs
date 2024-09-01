@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+</head>
+<body>
+    <h1>
+        My Name: <%= myname %>
+    </h1>
+    <h2>
+        <%= title %>
+    </h2>
+    <ul>
+        <% definitions.forEach(function(def) { %>
+            <li>
+                <%= def.name %> : <%= def.definition %>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
