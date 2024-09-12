@@ -1,0 +1,13 @@
+<div class="app-container">
+  <h1>Message Display App</h1>
+  <div>
+    <label for="messageInput">Message to Display:</label>
+    <input
+      id="messageInput"
+      type="text"
+      (input)="updateMessage($event)"
+    />
+    <button (click)="displayUserMessage()">Display Message</button>
+  </div>
+  <h2>{{ displayMessage }}</h2>
+</div>
