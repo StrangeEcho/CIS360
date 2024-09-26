@@ -15,15 +15,16 @@ export class BooksListComponent implements OnInit {
   ngOnInit(): void {
     this.crudService.GetBooks().subscribe(res => {
       console.log(res)
-      this.Books = res;
-    });
+      this.Books =res;
+    });    
   }
 
   onDelete(id: any): any {
     this.crudService.DeleteBook(id)
       .subscribe(res => {
         console.log(res)
-    })
-    location.reload();
+      })
+      location.reload();
   }
+
 }
