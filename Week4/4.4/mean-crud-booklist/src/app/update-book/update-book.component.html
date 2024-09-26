@@ -1,0 +1,31 @@
+<div class="container">
+    <h2>Update Book</h2>
+    <form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="isbn">ISBN:</label>
+        <input type="text" class="form-control" formControlName="isbn" placeholder="Enter ISBN">
+      </div>
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" class="form-control" formControlName="title" placeholder="Enter Title">
+      </div>
+      <div class="form-group">
+        <label for="author">Author:</label>
+        <input type="text" class="form-control" formControlName="author" placeholder="Enter Author">
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea class="form-control" formControlName="description" placeholder="Enter Description"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="published_year">Published Year:</label>
+        <input type="text" class="form-control" formControlName="published_year" placeholder="Enter Published Year">
+      </div>
+      <div class="form-group">
+        <label for="publisher">Publisher:</label>
+        <input type="text" class="form-control" formControlName="publisher" placeholder="Enter Publisher">
+      </div>
+      <button type="submit" class="btn btn-primary">Update Book</button>
+    </form>
+  </div>
+  
